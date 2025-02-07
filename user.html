@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vine Revival</title>
+    <link rel="stylesheet" href="assets/style/styles.css" />
+    <script type="module" src="assets/scripts/user.js"></script>
+  </head>
+  <body>
+    <div class="banner">
+      <img
+        src="assets/images/banner.jpg"
+        alt="Banner Image"
+        class="banner-image"
+      />
+      <img src="assets/images/vine_logo.png" alt="Vine Logo" class="logo" />
+    </div>
+    <main>
+      <div id="video-container"></div>
+    </main>
+    <footer>
+      <div class="copyright-disclaimer">
+        <p>
+          All rights to the content featured on this platform belong to their
+          respective owners. We do not claim ownership of any copyrighted
+          material.
+        </p>
+      </div>
+    </footer>
+    <script type="module">
+      import { fetchUserByVanity } from "./assets/scripts/user.js";
+
+      fetchUserByVanity("Rus");
+    </script>
+  </body>
+</html>

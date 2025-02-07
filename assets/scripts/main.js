@@ -50,7 +50,7 @@ const addVideo = (videoSrc, userName) => {
   const userParagraph = document.createElement("p");
   userParagraph.textContent = userName;
   videoDiv.appendChild(userParagraph);
-  
+
   videoContainer.appendChild(videoDiv);
 };
 
